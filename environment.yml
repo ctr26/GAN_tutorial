@@ -1,6 +1,9 @@
 name: binder
-dependencies:
+channels:
   - pytorch
+  - conda-forge
+dependencies:
+  - pytorch=0.3.1
   - torchvision
   - matplotlib==2.0.2
   - numpy==1.14.1
