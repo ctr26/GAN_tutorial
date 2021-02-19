@@ -3,10 +3,11 @@ channels:
   - pytorch
   - conda-forge
 dependencies:
-  - cudatoolkit=9.0
+  - cudatoolkit=11
   - pytorch
-  - torchvision
-  - matplotlib==2.0.2
-  - numpy==1.14.1
-  - ipython==6.2.1
-  - scikit-learn==0.19.1
+#   - tensorflow=2.2
+#   - torchvision
+#   - matplotlib==2.0.2
+#   - numpy==1.14.1
+#   - ipython==6.2.1
+#   - scikit-learn==0.19.1
