@@ -4,7 +4,7 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
-  - cudatoolkit=10
+  - cudatoolkit=10.2
   - pytorch
 #   - tensorflow=2.2
 #   - torchvision
