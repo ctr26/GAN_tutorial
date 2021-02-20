@@ -1,5 +1,5 @@
 export CUDA_VERSION=10.1.243
-export CUDA_PKG_VERSION="10-1=$CUDA_VERSION-1"
+export CUDA_PKG_VERSION=10-1=$CUDA_VERSION-1
 
 ln -s cuda-10.1 /usr/local/cuda && \
 rm -rf /var/lib/apt/lists/*
