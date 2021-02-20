@@ -1,8 +1,6 @@
 gnupg2
 curl
 ca-certificates
-cuda-cudart-10-1=10.1.243-1
-cuda-compat-10-1
 wget
 sudo
 locales
