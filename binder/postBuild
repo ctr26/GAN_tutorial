@@ -1,0 +1,18 @@
+export CUDA_VERSION=10.1.243
+export CUDA_PKG_VERSION="10-1=$CUDA_VERSION-1"
+
+ln -s cuda-10.1 /usr/local/cuda && \
+rm -rf /var/lib/apt/lists/*
+
+# Required for nvidia-docker v1
+echo "/usr/local/nvidia/lib" >> /etc/ld.so.conf.d/nvidia.conf && \
+echo "/usr/local/nvidia/lib64" >> /etc/ld.so.conf.d/nvidia.conf
+
+export PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:${PATH}
+export ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64:${LD_LIBRARY_PATH}
+
+# nvidia-container-runtime
+export NVIDIA_VISIBLE_DEVICES=all
+export NVIDIA_DRIVER_CAPABILITIES=compute,utility
+export NVIDIA_REQUIRE_CUDA="cuda>=10.1 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411 brand=tesla,driver>=418,driver<419"
+
