@@ -1,5 +1,5 @@
 # For the latest tag, see: https://hub.docker.com/r/jupyter/datascience-notebook/tags/
-FROM jupyter/datascience-notebook:f2889d7ae7d6
+FROM jupyter/minimal-notebook
 
 # GPU powered ML
 # ----------------------------------------
