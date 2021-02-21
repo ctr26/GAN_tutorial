@@ -1,9 +1,7 @@
 # For the latest tag, see: https://hub.docker.com/r/jupyter/datascience-notebook/tags/
 # FROM jupyter/datascience-notebook:f2889d7ae7d6
 # FROM nvidia/cuda:10.1-base-ubuntu18.04
-FROM latest-gpu-jupyter
-docker tensorflow/tensorflow:latest-gpu-jupyter
-
+FROM tensorflow/tensorflow:latest-gpu-jupyter
 
 # # FROM python:3.7-slim
 # # install the notebook package
