@@ -4,7 +4,7 @@ FROM jupyter/minimal-notebook
 # GPU powered ML
 # ----------------------------------------
 RUN conda install -c conda-forge --yes --quiet \
-    tensorflow \
+    tensorflow-gpu \
     cudatoolkit=10.1 && \
     conda clean -tipsy
 
